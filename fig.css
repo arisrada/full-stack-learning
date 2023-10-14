@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 30px;
+}
+/* .nav2{
+    display: flex;
+} */
+.srada2{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+.srada1{
+    display: flex;
+    justify-content: space-between;
+}
+.srada3{
+    display: flex;
+    list-style-type:none;
+    gap: 20px;
+}
+.face{
+    position: relative;
+}
+.btn{
+    padding:5px;
+    position: absolute;
+    top: 100px;
+    right: 80px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background: linear-gradient(violet, blue);
+}
+.card{
+    position: relative;
+    margin-top: 100px;
+    margin-right: 200px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 150px rgb(224, 217, 217);
+}
+.fig{
+    position: absolute;
+    top:0;
+    left: -40px;
+    height: 100px;
+}
+.image{
+    position: relative;
+}
+.icon1{
+    position: absolute;
+    height: 100px;
+    top: 70px;
+    left: -140px;
+}
+.font1{
+    position: absolute;
+    height: 100px;
+    top: 250px;
+    right: -20px;
+}
+.flow1{
+    position: absolute;
+    height: 100px;
+    right: -140px;
+    top: 90px;
+}
+.user1{
+    position: absolute;
+    height: 100px;
+    top: -70px;
+    right: -60px;
+}
+.kit1{
+    position: absolute;
+    height: 100px;
+    top: -90px;
+    right: 110px;
+}
+.frame1{
+    position: absolute;
+    height: 100px;
+    right: 120px;
+    top: 180px;
+}
+.diamond1{
+    position: absolute;
+    height: 100px;
+    top: 0px;
+    right: -40px;
+}
+.con{
+    height: 400px;
+    width: 400px;
+}
+.footer{
+    margin-top: 100px;
+    gap: 20px;
+    margin-left: 50px;
+}

@@ -1,0 +1,84 @@
+.para{
+    color: aqua; 
+    background-color: rgb(31, 29, 29); 
+    font-size: 20px;
+}
+
+.card1{
+    background-color: rgb(189, 184, 184);
+    width: 400px;
+    height: 200px;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    position: relative;
+}
+
+.box{
+    background-color: aqua;
+    height: 210px;
+    width:410px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.card1 .con1{
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.card1 .con2{
+    margin-right: 50px;
+    margin-top: 55px;
+}
+.card1 .con2 p{
+    font-size: 30px;
+}
+.box1{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    z-index: 0;
+    overflow: hidden;
+    &::before{
+        top: -50%;
+        left: -50%;
+        content: "";
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        z-index: -2;
+        background-color: black;
+        background-image: linear-gradient(rgb(54, 244, 54), rgb(54, 244, 54)),
+                          linear-gradient(rgb(234, 54, 114),rgb(234, 54, 114)),
+                          linear-gradient(rgb(5, 246, 246), rgb(5, 246, 246)),
+                          linear-gradient(rgb(184, 40, 40), rgb(184, 40, 40));
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+        background-position: 0 0, 100% 0, 0 100%, 100% 100%;
+        animation: box1 2s infinite linear ;
+        border-radius: 20px;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        width: calc(100% - 12px);
+        height:calc(100% - 12px);
+        background-color: white;
+        z-index: -1;
+        top: 6px;
+        left: 6px;
+        /* display: none; */
+    }
+}
+
+@keyframes box1 {
+    100%{
+        transform: rotate(360deg);
+    }
+}

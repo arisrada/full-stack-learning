@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task4.css">
+    <title>responsive</title>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .header{
+        background-color: black;
+        color: aliceblue;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .nav{
+        display: flex;
+        justify-content: center;
+        background-color: blueviolet;
+        padding: 10px 0;
+        column-gap: 10px;
+    }
+    .nav a{
+        color: aqua;
+        text-decoration: none;
+        padding: 8px 0;
+
+    }
+    .condent{
+        padding: 20px;
+    }
+    .footer{
+        background-color: black;
+        color: aliceblue;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    @media (max-width :480px){
+        .nav{
+            flex-direction: column;
+            background-color: brown;
+        }
+    }
+    @media (min-width: 763px) {
+        .header{
+           font-size: 24px;
+        }
+       
+    }
+    @media (min-width: 1024px) {
+        .nav{
+        justify-content: flex-end;
+    }
+}
+</style>
+</head>
+<body>
+    <div class="header">
+        <h1>responsive lay out example</h1>
+    </div>
+    <div class="nav">
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">services</a>
+        <a href="#">contact</a>
+    </div>
+    <div class="condent">
+    <h2>Welcome our website</h2>
+    <p>W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy.
+    </p>
+    <p>Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy.</p>
+</div>
+
+</body>
+</html>
